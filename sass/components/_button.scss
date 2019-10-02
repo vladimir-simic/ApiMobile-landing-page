@@ -1,0 +1,174 @@
+.btn-primary{
+	padding: 9px 0;
+	width: 300px;
+	justify-self: center;
+
+	@include button-style-common();
+
+	&__1{
+		grid-row: 3 / 5;
+		grid-column: 2 / 5;
+
+	    padding: 0 0;
+		margin-left: 17px;
+		margin-bottom: 65px;
+
+		height: 51px;
+		line-height: 51px;
+		letter-spacing: 1.6px;
+
+		@include button-hover-effect();
+
+		@include smx{
+			grid-row: 3 / 5;
+		    grid-column: 2 / 5;
+
+		    padding: 3px 10px;
+		    margin-left: 19px;
+		    margin-bottom: 149px;
+		    
+		    height: 51px;
+		    line-height: 51px;
+		    letter-spacing: 2.6px;
+		}
+	}
+
+	&__2{
+		margin-top: -10px;
+		margin-bottom: 47px;
+
+		line-height: 33px;
+		letter-spacing: 1.7px;
+
+		@include button-hover-effect();
+
+		@include smx{
+			padding: 11px 10px;
+			margin-left: 22px;
+			margin-top: -13px;
+		}
+	}
+}
+
+.btn-secondary{
+
+	@include button-style-common();
+
+	&__1{
+		padding: 15px 71px;
+	    margin-left: 10.3%;
+
+	    letter-spacing: 1.7px;
+
+		@include button-hover-effect();
+
+		@include xxl{
+			margin-left: 20.3%;
+		}
+
+		@include xl-2{
+			margin-left: 12.3%;
+		}
+
+		@include lg{
+			margin-left: 5.3%;
+		}
+
+		@include md{
+			margin-left: 29%;
+		}
+
+		@include sm{
+			margin-left: 20%;
+		}
+
+		@include smx{
+			margin-left: 22%;
+		}
+	}
+	
+	&__2{
+		padding: 15px 71px;
+		margin-left: 2%;
+
+		letter-spacing: 1.7px;
+
+		@include button-hover-effect();
+
+		@include xl-2{
+			margin-left: 9%;
+		}
+
+		@include xl{
+			margin-left: -6%;
+		}
+
+		@include lg{
+			margin-left: 36%;
+		}
+
+		@include md{
+			margin-left: 29%;
+		}
+
+		@include sm{
+			margin-left: 20%;
+		}
+
+		@include smx{
+			margin-left: 22%;
+		}
+	}
+
+	&__3{
+		padding: 15px 71px;
+		margin-left: 10.3%;
+
+		letter-spacing: 1.7px;
+
+		@include button-hover-effect();
+
+		@include xxl{
+			margin-left: 20.3%;
+		}
+
+		@include xl-2{
+			margin-left: 12.3%;
+		}
+
+		@include lg{
+			margin-left: 5.3%;
+		}
+
+		@include md{
+			margin-left: 29%;
+		}
+
+		@include sm{
+			margin-left: 20%
+		}
+
+		@include smx{
+			margin-left: 22%;
+		}
+
+	}
+	
+	&__4{
+	    margin-bottom: 155px;
+		margin-top: -96px;
+		margin-left: 19px;
+
+		padding: 15px 91px;
+
+		letter-spacing: 1.7px;
+		justify-self: center;
+
+		@include button-hover-effect();
+
+		@include smx{
+			margin-bottom: 216px;
+			
+		}
+	}
+}

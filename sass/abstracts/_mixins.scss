@@ -1,0 +1,146 @@
+
+@mixin smx {
+   @media (max-width: 480px) {
+       @content;
+   }
+}
+
+@mixin sm {
+   @media (max-width: 600px) {
+       @content;
+   }
+}
+
+@mixin md {
+   @media (max-width: 790px) {
+       @content;
+   }
+}
+
+@mixin lg {
+   @media (max-width: 920px) {
+       @content;
+   }
+}
+
+@mixin xl {
+   @media (max-width: 1204px) {
+       @content;
+   }
+}
+
+@mixin xl-2 {
+   @media (max-width: 1460px) {
+       @content;
+   }
+}
+
+@mixin xxl {
+   @media (max-width: 1670px) {
+       @content;
+   }
+}
+
+@mixin xxl-2 {
+   @media (max-width: 1800px) {
+       @content;
+   }
+}
+
+@mixin button-style-common(){
+	background-color: $color-red;
+	z-index: 10;
+	border: none;
+	border-radius: 100px;
+	text-align: center;
+	color: $color-white;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .3s;
+}
+
+@mixin button-hover-effect(){
+	&:hover{
+			background-color: $color-dark-blue;
+			-webkit-box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.83);
+			-moz-box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.83);
+			box-shadow: 0px 7px 9px -4px rgba(0,0,0,0.83);
+		}
+}
+
+@mixin heading-secondary-common(){
+	color: $color-dark-blue;
+    font-size: $font-size-26;
+    text-transform: uppercase;
+    letter-spacing: 2.6px;
+}
+
+@mixin testimonial-positioning(){
+	margin-top: -13px;
+	width: 44%;
+	list-style-type: none;
+	z-index: 100;
+
+	@include smx{
+		width: 99%;
+	}
+}
+
+@mixin testimonial-paragraph{
+	p{
+		padding: 9%;
+		letter-spacing: 1.6px;
+
+		@include xxl{
+			font-size: 14px;
+		}
+	}
+}
+
+@mixin what-we-do-caption-common(){
+	display: grid;
+	grid-row: 1;
+	grid-column: 2;
+	grid-template-rows: 464px;
+	grid-template-columns: 50% 50%;
+	align-items: center;
+
+	background-image: url(../img/round_photo.png);
+	background-size: 27%;
+	background-repeat: no-repeat;
+
+	margin: 0;
+	border-top: 2px solid $color-light-gray;
+}
+
+@mixin what-we-do-figcap-common(){
+	margin-bottom: 44px;
+	margin-left: 10.3%;
+
+	letter-spacing: 1.6px;
+
+	@include xxl{
+		margin-left: 20.3%;
+	}
+
+	@include xl-2{
+		margin-left: 12.3%;
+	}
+
+	@include lg{
+		margin-left: 5.3%;
+    	padding-right: 331px;
+	}
+
+	@include md{
+		padding: 0 43px;
+		margin-left: -1.7%;
+		text-align: center;
+	}
+
+	@include smx{
+		margin-left: .3%;
+		padding: 0 3px;
+	}
+}
